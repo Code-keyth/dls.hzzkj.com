@@ -1,0 +1,16 @@
+项目架构
+
+/app/admin--系统后台
+/app/index/admin--会员后台
+
+
+
+重要cookie
+HZZ_USER       后台登录重要指标
+HZZ_USER_MEM   前台登录重要指标
+
+数据库
+
+
+
+
