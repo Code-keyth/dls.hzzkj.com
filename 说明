@@ -9,8 +9,40 @@
 HZZ_USER       后台登录重要指标
 HZZ_USER_MEM   前台登录重要指标
 
-数据库
+数据库字段说明
 
+_admin
+	ip2		本次登录ip
+	ip1		上次登录ip
+	visits  	登录次数
+	cookie  	当前登录者的cookie 与 USER对比
+	state   	登录状态 1 登录中   0 未登录
 
+_article
+	title2  	简略标题
+	type		类型
+	column		栏目
+	sort		排序值
+	click		点击数
+	state		状态：0 发布中  1下架
+
+_memeber
+	level		等级 0--普通 1--白银 2--黄金 3--白金 4--钻石
+	auditing 	是否需要审核 0--不需要 1--需要
+	history		升级史
+	up_history	最近一次升级
+	integral	积分
+
+_project
+	state		项目状态 0-提交订单 1 2 3 4 5 6 7--项目完成
+	executor	执行者id
+	mid		所属会员id
+	starttime	项目开始时间
+	endtime		项目完成时间
+	isfapiao	该项目是否申请发票 0未申请   申请发票的id
+	
+	
+	
+ 
 
 

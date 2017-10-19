@@ -75,7 +75,6 @@ class IndexController extends Controller
         $this->assign('articles', $articles);
         return $this->fetch();
     }
-
     public function article_add()
     {
         $id = Request::instance()->get('id/d');
@@ -85,7 +84,6 @@ class IndexController extends Controller
             if (!$article) {
                 $article=Article::article_add_up();
                 $article->type='';
-
             } else {
                 $article = $article[0];
             }
@@ -134,8 +132,6 @@ class IndexController extends Controller
         } else {
             return alert("发布失败<br/>原因:" . $Article->getError(), 'article_list', 5, 0);
         }
-
-
         #return $this->fetch();
     }
 

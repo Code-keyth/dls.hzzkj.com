@@ -12,14 +12,12 @@
 <!--[if lt IE 9]>
 <script type="text/javascript" src="_ADMIN/lib/html5shiv.js"></script>
 <script type="text/javascript" src="_ADMIN/lib/respond.min.js"></script>
-<script type="text/javascript" src="_ADMIN/js/biaodan.js"></script>
 <![endif]-->
 <link rel="stylesheet" type="text/css" href="_ADMIN/static/h-ui/css/H-ui.min.css" />
 <link rel="stylesheet" type="text/css" href="_ADMIN/static/h-ui.admin/css/H-ui.admin.css" />
 <link rel="stylesheet" type="text/css" href="_ADMIN/lib/Hui-iconfont/1.0.8/iconfont.css" />
 <link rel="stylesheet" type="text/css" href="_ADMIN/static/h-ui.admin/skin/default/skin.css" id="skin" />
 <link rel="stylesheet" type="text/css" href="_ADMIN/static/h-ui.admin/css/style.css" />
-
 <!--[if IE 6]>
 <script type="text/javascript" src="_ADMIN/lib/DD_belatedPNG_0.0.8a-min.js" ></script>
 <script>DD_belatedPNG.fix('*');</script>
@@ -57,27 +55,10 @@
 	<form action="{:url('member_add_c')}" method="post" class="form form-horizontal" id="form-member-add">
 		<div class="row cl">
 			<label class="form-label col-xs-4 col-sm-3"><span class="c-red">*</span>用户名：</label>
-			<div class="formControls col-xs-5 col-sm-5">
-				<input type="text" class="input-text addfrom  addname" value="{$member->getdata('username')}" placeholder="" id="username" name="username" >
+			<div class="formControls col-xs-8 col-sm-9">
+				<input type="text" class="input-text"  onblur="checkna()" value="{$member->getdata('username')}" placeholder="" id="username" name="username">
 			</div>
-			<div class="col-xs-3 col-xs-4 addname-wenzi">请使用4-16个字母和数字的组合 </div>
 		</div>
-
-		<div class="row cl">
-			<label class="form-label col-xs-4 col-sm-3"><span class="c-red">*</span>手机：</label>
-			<div class="formControls col-xs-5 col-sm-5">
-				<input type="text"  class="input-text addphone" value="{$member->getdata('mobile')}"  placeholder="" id="mobile" name="mobile">
-			</div>
-			<div class="col-xs-3 col-xs-4 addname-phone"> * 请输入正确的手机号 </div>
-		</div>
-		<div class="row cl">
-			<label class="form-label col-xs-4 col-sm-3"><span class="c-red">*</span>邮箱：</label>
-			<div class="formControls col-xs-5 col-sm-5">
-				<input type="text" value="{$member->getdata('email')}"  class="input-text addemail" placeholder="@" name="email" id="email">
-			</div>
-			<div class="col-xs-3 col-xs-4  addname-addmail"> * 请输入正确的邮箱 </div>
-		</div>
-
 		<div class="row cl">
 			<label class="form-label col-xs-4 col-sm-3"><span class="c-red">*</span>性别：</label>
 			<div class="formControls col-xs-8 col-sm-9">
@@ -87,6 +68,20 @@
 				</select>
 			</div>
 		</div>
+		<div class="row cl">
+			<label class="form-label col-xs-4 col-sm-3"><span class="c-red">*</span>手机：</label>
+			<div class="formControls col-xs-8 col-sm-9">
+				<input type="text" class="input-text" value="{$member->getdata('mobile')}" placeholder="" id="mobile" name="mobile">
+			</div>
+		</div>
+		<div class="row cl">
+			<label class="form-label col-xs-4 col-sm-3"><span class="c-red">*</span>邮箱：</label>
+			<div class="formControls col-xs-8 col-sm-9">
+				<input type="email" value="{$member->getdata('email')}" class="input-text" placeholder="@" name="email" id="email">
+			</div>
+		</div>
+
+
 
 		<div id="distpicker5" class="row cl">
 			<label class="form-label col-xs-4 col-sm-3">所在城市：</label>
@@ -112,14 +107,13 @@
 				<input type="text" class="input-text" value="{$member->getdata('street')}" placeholder="" id="" name="street">
 			</div>
 		</div>
-
-		{present name="off"}
+{present name="off"}
 		<div class="row cl"  hidden="hidden">
 			<div class="formControls col-xs-8 col-sm-9">
 				<input type="text" class="input-text" value="{$member->getdata('id')}" placeholder="" id="" name="id">
 			</div>
 		</div>
-		{/present}
+{/present}
 		<div class="row cl">
 			<label class="form-label col-xs-4 col-sm-3"> 备注：</label>
 			<div class="formControls col-xs-8 col-sm-9">
@@ -129,10 +123,9 @@
 		</div>
 		<div class="row cl">
 			<div class="col-xs-8 col-sm-9 col-xs-offset-4 col-sm-offset-3">
-
-				<input class="btn btn-primary radius addbotton"  type="submit" value="&nbsp;&nbsp;提交&nbsp;&nbsp;"> </input>
+				<input class="btn btn-primary radius" type="submit" value="&nbsp;&nbsp;提交&nbsp;&nbsp;">
 			</div>
-
+		</div>
 	</form>
 
 
@@ -141,9 +134,7 @@
 </article>
 
 <!--_footer 作为公共模版分离出去-->
-<script type="text/javascript" src="_ADMIN/lib/jquery/1.9.1/jquery.min.js"></script>
-<script type="text/javascript" charset="UTF-8" src="_ADMIN/js/biaodan.js"></script>
-
+<script type="text/javascript" src="_ADMIN/lib/jquery/1.9.1/jquery.min.js"></script> 
 <script type="text/javascript" src="_ADMIN/lib/layer/2.4/layer.js"></script>
 <script type="text/javascript" src="_ADMIN/static/h-ui/js/H-ui.min.js"></script> 
 <script type="text/javascript" src="_ADMIN/static/h-ui.admin/js/H-ui.admin.js"></script> <!--/_footer 作为公共模版分离出去-->
@@ -155,7 +146,13 @@
 <script type="text/javascript" src="_ADMIN/lib/jquery.validation/1.14.0/messages_zh.js"></script>
 <script type="text/javascript">
 
+    function checkna() {
 
+
+        $.get("{:url('member_validate')}",{ "data": ""},function(data){
+            alert(data);
+        });
+    }
 
             $(function(){
 	$('.skin-minimal input').iCheck({
