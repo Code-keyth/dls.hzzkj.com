@@ -44,6 +44,15 @@
 				<input type="text" class="input-text" value="{$article->getdata('title2')}" placeholder="" id="articletitle2" name="articletitle2">
 			</div>
 		</div>
+
+		{present name="off"}
+		<div class="row cl"  hidden="hidden">
+			<div class="formControls col-xs-8 col-sm-9">
+				<input type="text" class="input-text" value="{$article->getdata('id')}" placeholder="" id="" name="id">
+			</div>
+		</div>
+		{/present}
+
 		<div class="row cl">
 			<label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>文章类型：</label>
 			<div class="formControls col-xs-8 col-sm-9"> <span class="select-box">

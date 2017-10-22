@@ -41,6 +41,20 @@ _project
 	endtime		项目完成时间
 	isfapiao	该项目是否申请发票 0未申请   申请发票的id
 	
+
+
+日志说明
+
+'apart_level'   =>  [
+	'mem_log',	会员升级注册
+	'pro_start',	项目创建更新
+	'mem_level',	会员升级注册
+	'art_add'	资讯添加更新
+],     
+
+
+
+
 	
 	
  

@@ -21,9 +21,9 @@
 	<script type="text/javascript" src="_ADMIN/lib/DD_belatedPNG_0.0.8a-min.js" ></script>
 	<script>DD_belatedPNG.fix('*');</script>
 	<![endif]-->
-	<title>黑珍珠代理商系统</title>
-	<meta name="keywords" content="黑珍珠代理系统">
-	<meta name="description" content="黑珍珠代理系统，适合中小型CMS后台系统。">
+	<title>{$config['0']}</title>
+	<meta name="keywords" content="{$config['1']}">
+	<meta name="description" content="{$config['2']}">
 </head>
 <body>
 <header class="navbar-wrapper">
@@ -166,11 +166,11 @@
 			<dt><i class="Hui-iconfont">&#xe62e;</i> 系统管理<i class="Hui-iconfont menu_dropdown-arrow">&#xe6d5;</i></dt>
 			<dd>
 				<ul>
-					<li><a data-href="{:url('system_base')}" data-title="系统设置" href="javascript:void(0)">支付配置</a></li>
+					<li><a data-href="{:url('config/index')}" data-title="系统设置" href="javascript:void(0)">系统设置</a></li>
 
 					<!-- <li><a data-href="system-data.html" data-title="数据字典" href="javascript:void(0)">数据字典</a></li>
-					<li><a data-href="system-shielding.html" data-title="屏蔽词" href="javascript:void(0)">屏蔽词</a></li>
-					<li><a data-href="system-log.html" data-title="系统日志" href="javascript:void(0)">系统日志</a></li> -->
+					<li><a data-href="system-shielding.html" data-title="屏蔽词" href="javascript:void(0)">屏蔽词</a></li>-->
+					<li><a data-href="{:url('config/log')}" data-title="系统日志" href="javascript:void(0)">系统日志</a></li>
 				</ul>
 			</dd>
 		</dl>

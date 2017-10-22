@@ -2,11 +2,13 @@
 namespace app\admin\controller;
 use app\common\model\Admin;
 use app\common\model\Article;
+use app\common\model\Config;
 use app\common\model\Goodtype;
 use app\common\model\Member;
 use app\common\model\Project;
 use think\Controller;
 use think\Db;
+use think\Log;
 use think\Request;
 
 class IndexController extends Controller
@@ -41,6 +43,10 @@ class IndexController extends Controller
         if($admin_info->getdata('state')==0){
             return alert('未登录，请先登陆！',url('login/index'),5,3);
         }
+        $Config=new Config();
+        $configs=$Config->column('value');
+        $this->assign('config',$configs);
+
         $this->assign('admin',$admin_info);
         return $this->fetch();
     }
@@ -51,12 +57,10 @@ class IndexController extends Controller
         $admin = Admin::get(1);
         $Member = new Member();
         $Project = new Project();
-
         $info['member_number'] = $Member->count();
         $info['member_dls_number'] = $Member->where('level', '>', 0)->count();
         $info['project_number'] = $Project->count();
         $info['project_ing_number'] = $Project->where('state', '<', 7)->count();
-
         $info['new_member_number'] = $Member->where('create_time', '>', time() - 2592000)->count();
         $info['member_dls_sh_number'] = $Member->where('auditing', 1)->count();
         $info['fapiao_number'] = Db::name('fapiao')->count();
@@ -86,12 +90,12 @@ class IndexController extends Controller
                 $article->type='';
             } else {
                 $article = $article[0];
+                $this->assign('off','off');
             }
         } else {
             $article=Article::article_add_up();
             $article->type='';
         }
-
         $this->assign('article', $article);
         return $this->fetch();
     }
@@ -100,6 +104,7 @@ class IndexController extends Controller
     {
         $getdata = Request::instance()->get();
         $Article = new Article();
+        Log::write('管理员['.Admin::get_id().']将文章[id='.$Article->id.']的状态变成===>'.$getdata['state'],'art_add');
         $Article->where('id', $getdata['id'])->setField('state', $getdata['state']);
     }
 
@@ -112,7 +117,11 @@ class IndexController extends Controller
     public function article_c()
     {
         $postdata = Request::instance()->post();
-        $Article = NEW Article();
+        if(isset( $postdata['id'])) {
+            $Article =Article::get($postdata['id']);
+        }else{
+            $Article = NEW Article();
+        }
         $Article->title = $postdata['articletitle'];
         $Article->title2 = $postdata['articletitle2'];
         #$Article->column=$postdata['articlecolumn'];
@@ -128,11 +137,11 @@ class IndexController extends Controller
         $Article->create_time = time();
         $a = $Article->save();
         if ($a) {
+            Log::write('管理员['.Admin::get_id().']发布/修改了文章[id='.$Article->id,'art_add');
             return alert('资讯发布/修改成功', 'article_list', 6, 0);
         } else {
             return alert("发布失败<br/>原因:" . $Article->getError(), 'article_list', 5, 0);
         }
-        #return $this->fetch();
     }
 
     /**
@@ -162,7 +171,7 @@ class IndexController extends Controller
     public function member_list_dls_sh()
     {
         $Member = new Member();
-        $members_sh = $Member->where('auditing=1')->select();
+        $members_sh = $Member->where('auditing>0')->select();
         $this->assign('members_sh', $members_sh);
         return $this->fetch();
     }
@@ -170,7 +179,6 @@ class IndexController extends Controller
     public function member_add()
     {
         $id = Request::instance()->get('id/d');
-        $Member = NEW Member();
         if (isset($id) && $id != 0) {
             $Member = Member::get($id);
             if (isset($Member)) {
@@ -209,6 +217,7 @@ class IndexController extends Controller
         $Member->create_time = time();
         $save = $Member->save();
         if ($save) {
+            Log::write('管理员['.Admin::get_id().']在后台添加/修改了会员[id='.$Member->id.']的信息！','mem_log');
             return alert('会员资料添加/修改成功', 'member_add', 6, 0);
         } else {
             return alert('会员资料添加/修改失败', 'member_add', 5, 0);
@@ -230,6 +239,7 @@ class IndexController extends Controller
         $level = $post['level'];
         $save = $Member->where('id', $id)->setField('level', $level);
         if ($save) {
+            Log::write('管理员['.Admin::get_id().']在后台给会员[id='.$id.']升级为[---'.$level.'级---]！','mem_log');
             return alert('添加/修改代理商成功！', 'member_add_dls', 6, 0);
         }
         return alert('添加/修改代理商失败！', 'member_add_dls', 5, 0);
@@ -238,13 +248,27 @@ class IndexController extends Controller
     public function member_level()
     {
         return $this->fetch();
-
     }
+    public function member_up_level()
+    {
+        $data=Request::instance()->get();
+
+       if(count($data)==2){
+            Log::write('管理员['.Admin::get_id().']在后台通过了会员[id='.$data['id'].']升级为[level='.$data['level'].']的去请求！','mem_log');
+            $save=Member::update(['id'=>$data['id'],'level'=>$data['level'],'auditing'=>0]);
+        }else{
+            Log::write('管理员['.Admin::get_id().']在后台拒绝了会员[id='.$data['id'].']升级的请求！','mem_log');
+            $save=Member::update(['id'=>$data['id'],'auditing'=>0]);
+        }
+        if($save)
+            return true;
+        return false;
+    }
+
 
     public function member_show()
     {
         return $this->fetch();
-
     }
 
     public function member_password()
@@ -303,6 +327,12 @@ class IndexController extends Controller
         if($save){return false;}
         return true;
     }
+
+
+
+
+
+
     /**
      * 产品
      **/
@@ -457,6 +487,8 @@ class IndexController extends Controller
         $Project = new Project();
         $state=$state+1;
         $Project->where('id', $id)->setField('state',$state);
+        $state1=$state-1;
+        Log::write('管理员['.Admin::get_id().']把项目<'.$id.'>的状态由[---'.$state1.'---]变成了[---'.$state.'---]','pro_start');
     }
 
     public function project_complete()
@@ -551,13 +583,7 @@ class IndexController extends Controller
         }
     }
 
-    /**
-     * 系统设置
-     **/
-    public function system_base()
-    {
-        return $this->fetch();
-    }
+
 
 
 }

@@ -43,10 +43,15 @@ class Admin extends Model
         $time=10000;
         if($online==1){
             $time=604800;
-
         }
         Cookie::set('HZZ_USER',$cookie,$time);
         $user->cookie=$cookie;
         $user->save();
+    }
+
+    static function get_id(){
+        $Admin=NEW Admin();
+        $id=$Admin->where("cookie",Cookie::get('HZZ_USER'))->column('id');
+        return $id[0];
     }
 }

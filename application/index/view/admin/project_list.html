@@ -16,6 +16,8 @@
 <link rel="stylesheet" type="text/css" href="_ADMIN/lib/Hui-iconfont/1.0.8/iconfont.css" />
 <link rel="stylesheet" type="text/css" href="_ADMIN/static/h-ui.admin/skin/default/skin.css" id="skin" />
 <link rel="stylesheet" type="text/css" href="_ADMIN/static/h-ui.admin/css/style.css" />
+
+
 <!--[if IE 6]>
 <script type="text/javascript" src="_ADMIN/lib/DD_belatedPNG_0.0.8a-min.js" ></script>
 <script>DD_belatedPNG.fix('*');</script>
@@ -53,8 +55,10 @@
 					<td>{$project->MemberName($project->getdata('mid'))['username']}</td>
 					<td>{$project->GoodtypeName($project->getdata('type'))['name']}</td>
 					<td class="text-c">{$project->getdata('name')}</td>
-					<td class="text-c" id="state">【
-					 							{eq name="project->getdata('state')" value="0"}待确认订单 {/eq}
+					<td class="text-l" id="state">
+						<div class="progress"><div class="progress-bar"><span class="sr-only" {eq name="project->getdata('state')" value="0"}style="width:10%"{/eq}{eq name="project->getdata('state')" value="1"}style="width:25%"{/eq}{eq name="project->getdata('state')" value="2"}style="width:35%"{/eq}{eq name="project->getdata('state')" value="3"}style="width:40%"{/eq}{eq name="project->getdata('state')" value="4"}style="width:55%"{/eq}{eq name="project->getdata('state')" value="5"}style="width:70%"{/eq}{eq name="project->getdata('state')" value="6"}style="width:85%"{/eq}{eq name="project->getdata('state')" value="7"}style="width:100%"{/eq} ></span></div></div>
+						【
+					 							{eq name="project->getdata('state')" value="0"}待确认订单{/eq}
 												{eq name="project->getdata('state')" value="1"}策划方案{/eq}
 												{eq name="project->getdata('state')" value="2"}确认开发{/eq}
 												{eq name="project->getdata('state')" value="3"}程序开发{/eq}
@@ -78,7 +82,6 @@
 			{$projects->render()}
 		</div>
 
-
 	</div>
 </div>
 <!--_footer 作为公共模版分离出去-->
@@ -86,7 +89,6 @@
 <script type="text/javascript" src="_ADMIN/lib/layer/2.4/layer.js"></script>
 <script type="text/javascript" src="_ADMIN/static/h-ui/js/H-ui.min.js"></script>
 <script type="text/javascript" src="_ADMIN/static/h-ui.admin/js/H-ui.admin.js"></script> <!--/_footer 作为公共模版分离出去-->
-
 <!--请在下方写此页面业务相关的脚本-->
 <script type="text/javascript" src="_ADMIN/lib/My97DatePicker/4.8/WdatePicker.js"></script> 
 <script type="text/javascript" src="_ADMIN/lib/datatables/1.10.0/jquery.dataTables.min.js"></script> 
