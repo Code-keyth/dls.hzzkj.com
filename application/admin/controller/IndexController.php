@@ -321,12 +321,7 @@ class IndexController extends Controller
         $Member->where('id', $getdata['id'])->delete();
     }
 
-    public function member_validate(){
-        $data=Request::instance()->get('data');
-        $save=Member::register_validate($data);
-        if($save){return false;}
-        return true;
-    }
+
 
 
 

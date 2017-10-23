@@ -7,6 +7,7 @@
  */
 namespace app\admin\controller;
 use app\common\model\Admin;
+use app\common\model\Member;
 use think\Controller;
 use think\Cookie;
 use think\Request;
@@ -51,6 +52,12 @@ class LoginController extends Controller{
         $Admin->save();
         Cookie::delete('HZZ_USER');
         return alert('退出成功！',url('index'),6,0);
+    }
+    public function member_validate(){
+        $data=Request::instance()->get('data');
+        $save=Member::register_validate($data);
+        if($save){return false;}
+        return true;
     }
 
 }

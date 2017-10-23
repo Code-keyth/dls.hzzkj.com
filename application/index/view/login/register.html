@@ -22,8 +22,6 @@
     <script type="text/javascript" src="_ADMIN/lib/DD_belatedPNG_0.0.8a-min.js" ></script>
     <script>DD_belatedPNG.fix('*');</script>
     <![endif]-->
-    <!--作为城市选择添加的-->
-    <link href="css/bootstrap.css" rel="stylesheet">
     <style>
         .form-control{
             height: 34px;
@@ -51,29 +49,35 @@
     <form action="{:url('register_c')}" method="post" class="form form-horizontal" id="form-member-add">
         <div class="row cl">
             <label class="form-label col-xs-4 col-sm-3"><span class="c-red">*</span>用户名：</label>
-            <div class="formControls col-xs-8 col-sm-9">
-                <input type="text" class="input-text" value="" placeholder="" id="username" name="username">
+            <div class="formControls col-xs-5 col-sm-5">
+                <input type="text" class="input-text addfrom  addname" value="" placeholder="" id="username" name="username" >
             </div>
+            <div class="col-xs-3 col-xs-4 addname-wenzi">请使用4-16个字母和数字的组合 </div>
+        </div>
+
+
+
+        <div class="row cl">
+            <label class="form-label col-xs-4 col-sm-3"><span class="c-red">*</span>手机：</label>
+            <div class="formControls col-xs-5 col-sm-5">
+                <input type="text"  class="input-text addphone" value=""  placeholder="" id="mobile" name="mobile">
+            </div>
+            <div class="col-xs-3 col-xs-4 addname-phone"> * 请输入正确的手机号 </div>
+        </div>
+        <div class="row cl">
+            <label class="form-label col-xs-4 col-sm-3"><span class="c-red">*</span>邮箱：</label>
+            <div class="formControls col-xs-5 col-sm-5">
+                <input type="text" value=""  class="input-text addemail" placeholder="@" name="email" id="email">
+            </div>
+            <div class="col-xs-3 col-xs-4  addname-addmail"> * 请输入正确的邮箱 </div>
         </div>
         <div class="row cl">
             <label class="form-label col-xs-4 col-sm-3"><span class="c-red">*</span>性别：</label>
             <div class="formControls col-xs-8 col-sm-9">
                 <select name="sex" class="select">
                     <option value="0">男</option>
-                    <optionselected = "selected"{/eq}  value="1">女</option>
+                    <option value="1">女</option>
                 </select>
-            </div>
-        </div>
-        <div class="row cl">
-            <label class="form-label col-xs-4 col-sm-3"><span class="c-red">*</span>手机：</label>
-            <div class="formControls col-xs-8 col-sm-9">
-                <input type="text" class="input-text" value="" placeholder="" id="mobile" name="mobile">
-            </div>
-        </div>
-        <div class="row cl">
-            <label class="form-label col-xs-4 col-sm-3"><span class="c-red">*</span>邮箱：</label>
-            <div class="formControls col-xs-8 col-sm-9">
-                <input type="email" value="" class="input-text" placeholder="@" name="email" id="email">
             </div>
         </div>
         <div class="row cl">
