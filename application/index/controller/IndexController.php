@@ -27,6 +27,7 @@ class IndexController extends Controller
     public function CrossborderTrade(){
         return $this->fetch();
     }
+
     public function Customized(){
         return $this->fetch();
     }

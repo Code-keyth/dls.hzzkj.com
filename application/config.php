@@ -142,6 +142,7 @@ return [
     'view_replace_str'       => [
         '_ADMIN'=>'/public/static/admin',
         '_INDEX'=>'/public/static/index',
+        '_MOBILE'=>'/public/static/mobile',
         '_TEMP'=>'/public/temp',
 
     ],
