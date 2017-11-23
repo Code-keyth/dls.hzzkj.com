@@ -5,48 +5,68 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7e6c6750-fb7b-446b-aa3d-2dbdf8f608f7" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/index/view/index/proxypattern.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/mobile/controller/AdminController.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/mobile/controller/IndexController.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/mobile/controller/LoginController.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/mobile/view/admin/article_list.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/mobile/view/admin/article_zhang.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/mobile/view/admin/fapiao.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/mobile/view/admin/fapiao_add.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/mobile/view/admin/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/mobile/view/admin/product_brand.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/mobile/view/admin/project_add.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/mobile/view/admin/project_complete.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/mobile/view/admin/project_list.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/mobile/view/admin/welcome.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/mobile/view/index/.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/mobile/view/index/agencyconsultation.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/mobile/view/index/agencypolicy.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/mobile/view/index/contactus.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/mobile/view/index/crossbordertrade.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/mobile/view/index/customized.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/mobile/view/index/dataopenapi.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/mobile/view/index/enterprisecloud.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/mobile/view/index/footer.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/mobile/view/index/head.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/mobile/view/index/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/mobile/view/index/itservice.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/mobile/view/index/onlineshop.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/mobile/view/index/seo.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/mobile/view/index/smallprogram.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/mobile/view/index/station.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/mobile/view/index/wechatdistribution.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/mobile/view/index/wechatmarketing.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/mobile/view/login/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/mobile/view/login/register.html" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/application/index/view/index/agencyconsultation&#10;.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/application/index/view/index/serviceplatform&#10;.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/application/index/view/index/websitecase&#10;.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/application/index/view/index/wordofmouth&#10;.html" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hzz.com.tar.gz" afterPath="$PROJECT_DIR$/hzz.com.tar.gz" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/admin/view/index/liuyan.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/common/model/Article_type.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/common/model/Liuyan.php" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/application/data/无标题文档" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/extend/.gitignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/hzz.com.tar.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/hzz.sql" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/log.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/.htaccess" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/favicon.ico" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/说明" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/data/app10-16.tar.gz" afterPath="$PROJECT_DIR$/application/data/app10-16.tar.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/data/app10-17.tar.gz" afterPath="$PROJECT_DIR$/application/data/app10-17.tar.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/data/app10-23.tar.gz" afterPath="$PROJECT_DIR$/application/data/app10-23.tar.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/data/app1019.tar.gz" afterPath="$PROJECT_DIR$/application/data/app1019.tar.gz" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/admin/controller/ConfigController.php" afterPath="$PROJECT_DIR$/application/admin/controller/ConfigController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/admin/controller/IndexController.php" afterPath="$PROJECT_DIR$/application/admin/controller/IndexController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/admin/view/index/article_add.html" afterPath="$PROJECT_DIR$/application/admin/view/index/article_add.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/admin/view/index/article_list.html" afterPath="$PROJECT_DIR$/application/admin/view/index/article_list.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/admin/view/index/index.html" afterPath="$PROJECT_DIR$/application/admin/view/index/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/admin/view/index/member_list_dls_sh.html" afterPath="$PROJECT_DIR$/application/admin/view/index/member_list_dls_sh.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/common/model/Article.php" afterPath="$PROJECT_DIR$/application/common/model/Article.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/common/model/Config.php" afterPath="$PROJECT_DIR$/application/common/model/Config.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/common/validate/Member.php" afterPath="$PROJECT_DIR$/application/common/validate/Member.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/config.php" afterPath="$PROJECT_DIR$/application/config.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/data/hzz-1.0.sql" afterPath="$PROJECT_DIR$/application/data/hzz-1.0.sql" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/database.php" afterPath="$PROJECT_DIR$/application/database.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/index/controller/AdminController.php" afterPath="$PROJECT_DIR$/application/index/controller/AdminController.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/index/controller/IndexController.php" afterPath="$PROJECT_DIR$/application/index/controller/IndexController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/index/controller/LoginController.php" afterPath="$PROJECT_DIR$/application/index/controller/LoginController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/index/view/admin/article_zhang.html" afterPath="$PROJECT_DIR$/application/index/view/admin/article_zhang.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/index/view/index/.html" afterPath="$PROJECT_DIR$/application/index/view/index/.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/index/view/index/agencyconsultation.html" afterPath="$PROJECT_DIR$/application/index/view/index/agencyconsultation.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/index/view/index/agencypolicy.html" afterPath="$PROJECT_DIR$/application/index/view/index/agencypolicy.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/index/view/index/contactus.html" afterPath="$PROJECT_DIR$/application/index/view/index/contactus.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/index/view/index/crossbordertrade.html" afterPath="$PROJECT_DIR$/application/index/view/index/crossbordertrade.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/index/view/index/customized.html" afterPath="$PROJECT_DIR$/application/index/view/index/customized.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/index/view/index/dataopenapi.html" afterPath="$PROJECT_DIR$/application/index/view/index/dataopenapi.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/index/view/index/enterprisecloud.html" afterPath="$PROJECT_DIR$/application/index/view/index/enterprisecloud.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/index/view/index/footer.html" afterPath="$PROJECT_DIR$/application/index/view/index/footer.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/index/view/index/head.html" afterPath="$PROJECT_DIR$/application/index/view/index/head.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/index/view/index/index.html" afterPath="$PROJECT_DIR$/application/index/view/index/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/index/view/index/itservice.html" afterPath="$PROJECT_DIR$/application/index/view/index/itservice.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/index/view/index/onlineshop.html" afterPath="$PROJECT_DIR$/application/index/view/index/onlineshop.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/index/view/index/proxypattern.html" afterPath="$PROJECT_DIR$/application/index/view/index/proxypattern.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/index/view/index/seo.html" afterPath="$PROJECT_DIR$/application/index/view/index/seo.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/index/view/index/serviceplatform.html" afterPath="$PROJECT_DIR$/application/index/view/index/serviceplatform.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/index/view/index/smallprogram.html" afterPath="$PROJECT_DIR$/application/index/view/index/smallprogram.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/index/view/index/station.html" afterPath="$PROJECT_DIR$/application/index/view/index/station.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/index/view/index/websitecase.html" afterPath="$PROJECT_DIR$/application/index/view/index/websitecase.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/index/view/index/wechatdistribution.html" afterPath="$PROJECT_DIR$/application/index/view/index/wechatdistribution.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/index/view/index/wechatmarketing.html" afterPath="$PROJECT_DIR$/application/index/view/index/wechatmarketing.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/index/view/index/wordofmouth.html" afterPath="$PROJECT_DIR$/application/index/view/index/wordofmouth.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/index/view/login/register.html" afterPath="$PROJECT_DIR$/application/index/view/login/register.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/mobile/controller/AdminController.php" afterPath="$PROJECT_DIR$/application/mobile/controller/AdminController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/mobile/controller/LoginController.php" afterPath="$PROJECT_DIR$/application/mobile/controller/LoginController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/mobile/view/admin/article_zhang.html" afterPath="$PROJECT_DIR$/application/mobile/view/admin/article_zhang.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/mobile/view/index/footer.html" afterPath="$PROJECT_DIR$/application/mobile/view/index/footer.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/mobile/view/index/head.html" afterPath="$PROJECT_DIR$/application/mobile/view/index/head.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/mobile/view/login/register.html" afterPath="$PROJECT_DIR$/application/mobile/view/login/register.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/log.txt" afterPath="$PROJECT_DIR$/public/log.txt" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -58,71 +78,21 @@
   <component name="ComposerSettings" doNotAsk="true" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/application/mobile/view/index/index.html">
+      <file leaf-file-name="IndexController.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/application/index/controller/IndexController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="460">
-              <caret line="22" column="27" lean-forward="true" selection-start-line="22" selection-start-column="27" selection-end-line="22" selection-end-column="27" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="itservice.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/mobile/view/index/itservice.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="175">
-              <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="head.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/mobile/view/index/head.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1920">
-              <caret line="80" column="6" lean-forward="false" selection-start-line="80" selection-start-column="6" selection-end-line="80" selection-end-column="6" />
+            <state relative-caret-position="523">
+              <caret line="104" column="33" lean-forward="false" selection-start-line="104" selection-start-column="33" selection-end-line="104" selection-end-column="33" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="footer.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/mobile/view/index/footer.html">
+        <entry file="file://$PROJECT_DIR$/application/index/view/index/footer.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="671">
-              <caret line="184" column="0" lean-forward="true" selection-start-line="184" selection-start-column="0" selection-end-line="184" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="dataopenapi.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/mobile/view/index/dataopenapi.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
-              <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="agencypolicy.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/mobile/view/index/agencypolicy.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
-              <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name=".html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/mobile/view/index/.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="395">
-              <caret line="19" column="16" lean-forward="true" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="16" />
+            <state relative-caret-position="715">
+              <caret line="145" column="38" lean-forward="false" selection-start-line="145" selection-start-column="38" selection-end-line="145" selection-end-column="38" />
               <folding />
             </state>
           </provider>
@@ -196,35 +166,20 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/application/index/view/index/企业建站-网上开店.html" />
-        <option value="$PROJECT_DIR$/application/index/view/index/企业建站-小程序.html" />
-        <option value="$PROJECT_DIR$/application/index/view/index/企业建站-企业建站.html" />
-        <option value="$PROJECT_DIR$/application/index/view/index/代理政策.html" />
-        <option value="$PROJECT_DIR$/application/index/view/index/企业建站-建站案例.html" />
-        <option value="$PROJECT_DIR$/application/index/view/index/企业建站-微信分销.html" />
-        <option value="$PROJECT_DIR$/application/index/view/index/渠道代理-代理咨询.html" />
-        <option value="$PROJECT_DIR$/application/index/view/index/渠道代理-代理模式.html" />
-        <option value="$PROJECT_DIR$/application/index/view/index/营销推广-微信营销.html" />
-        <option value="$PROJECT_DIR$/application/index/view/index/软件开发-IT服务.html" />
-        <option value="$PROJECT_DIR$/application/index/view/index/软件开发-中小企业云.html" />
-        <option value="$PROJECT_DIR$/application/index/view/index/软件开发-数据开放API.html" />
         <option value="$PROJECT_DIR$/application/index/view/index/软件开发-服务平台.html" />
         <option value="$PROJECT_DIR$/application/index/view/index/软件开发-跨境贸易.html" />
         <option value="$PROJECT_DIR$/application/index/view/index/Websitecase&#10;.html" />
         <option value="$PROJECT_DIR$/application/index/view/index/Agencypolicy.html" />
-        <option value="$PROJECT_DIR$/application/index/view/index/footer.html" />
         <option value="$PROJECT_DIR$/application/index/view/index/index.html" />
         <option value="$PROJECT_DIR$/application/index/view/index/head.html" />
         <option value="$PROJECT_DIR$/application/index/view/index/station.html" />
         <option value="$PROJECT_DIR$/application/index/view/login/register.html" />
-        <option value="$PROJECT_DIR$/application/admin/controller/IndexController.php" />
         <option value="$PROJECT_DIR$/application/admin/controller/LoginController.php" />
         <option value="$PROJECT_DIR$/public/static/admin/js/biaodan.js" />
         <option value="$PROJECT_DIR$/application/config.php" />
         <option value="$PROJECT_DIR$/application/mobile/controller/IndexController.php" />
         <option value="$PROJECT_DIR$/application/mobile/view/index/websitecase&#10;.html" />
         <option value="$PROJECT_DIR$/application/mobile/view/index/footer.html" />
-        <option value="$PROJECT_DIR$/application/index/controller/IndexController.php" />
         <option value="$PROJECT_DIR$/application/mobile/view/index/serviceplatform&#10;.html" />
         <option value="$PROJECT_DIR$/application/mobile/view/index/agencyconsultation.html" />
         <option value="$PROJECT_DIR$/application/mobile/view/index/head.html" />
@@ -247,6 +202,21 @@
         <option value="$PROJECT_DIR$/application/mobile/view/index/wordofmouth.html" />
         <option value="$PROJECT_DIR$/application/mobile/view/index/.html" />
         <option value="$PROJECT_DIR$/application/mobile/view/index/index.html" />
+        <option value="$PROJECT_DIR$/application/admin/view/index/article_add.html" />
+        <option value="$PROJECT_DIR$/application/admin/view/index/article_list.html" />
+        <option value="$PROJECT_DIR$/application/common/model/Article_type.php" />
+        <option value="$PROJECT_DIR$/application/common/model/Article.php" />
+        <option value="$PROJECT_DIR$/application/index/view/index/news.html" />
+        <option value="$PROJECT_DIR$/application/index/view/index/newscontent.html" />
+        <option value="$PROJECT_DIR$/application/admin/view/index/member_list_dls_sh.html" />
+        <option value="$PROJECT_DIR$/application/admin/controller/IndexController.php" />
+        <option value="$PROJECT_DIR$/application/common/model/Liuyan.php" />
+        <option value="$PROJECT_DIR$/application/admin/view/index/index.html" />
+        <option value="$PROJECT_DIR$/application/admin/view/index/liuyan.html" />
+        <option value="$PROJECT_DIR$/application/index/controller/AdminController.php" />
+        <option value="$PROJECT_DIR$/application/index/view/index/agencyconsultation.html" />
+        <option value="$PROJECT_DIR$/application/index/view/index/footer.html" />
+        <option value="$PROJECT_DIR$/application/index/controller/IndexController.php" />
       </list>
     </option>
   </component>
@@ -257,11 +227,11 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="37" />
-    <option name="y" value="90" />
+    <option name="y" value="62" />
     <option name="width" value="1728" />
-    <option name="height" value="944" />
+    <option name="height" value="972" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -282,6 +252,7 @@
     </navigator>
     <panes>
       <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -298,7 +269,40 @@
               <item name="hzz.com" type="b2602c69:ProjectViewProjectNode" />
               <item name="hzz.com" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="application" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="admin" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="hzz.com" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hzz.com" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="application" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="admin" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="controller" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="hzz.com" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hzz.com" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="application" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="common" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="hzz.com" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hzz.com" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="application" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="common" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="model" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="hzz.com" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hzz.com" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="application" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="index" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="hzz.com" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hzz.com" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="application" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="index" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="controller" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="hzz.com" type="b2602c69:ProjectViewProjectNode" />
@@ -313,51 +317,20 @@
               <item name="application" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="index" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="view" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="admin" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="hzz.com" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hzz.com" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="application" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="index" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="hzz.com" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hzz.com" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="application" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="mobile" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="hzz.com" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hzz.com" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="application" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="mobile" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="view" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="hzz.com" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hzz.com" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="application" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="mobile" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="view" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="index" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="hzz.com" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hzz.com" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="public" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="hzz.com" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hzz.com" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="public" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="static" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="hzz.com" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hzz.com" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="public" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="temp" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -369,19 +342,19 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/application/index/view/index" />
-      <recent name="$PROJECT_DIR$/public/static/mobile" />
-      <recent name="$PROJECT_DIR$/application" />
-      <recent name="$PROJECT_DIR$/public/static/index" />
-      <recent name="$PROJECT_DIR$/application/admin/view/config" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/application/index/view/index" />
       <recent name="$PROJECT_DIR$/application/index/view" />
       <recent name="$PROJECT_DIR$/application/admin/view/config" />
       <recent name="$PROJECT_DIR$/application/admin/view" />
       <recent name="$PROJECT_DIR$/application/index/view/admin" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/application/admin/view/index" />
+      <recent name="$PROJECT_DIR$/application/index/view/index" />
+      <recent name="$PROJECT_DIR$/public/static/mobile" />
+      <recent name="$PROJECT_DIR$/application" />
+      <recent name="$PROJECT_DIR$/public/static/index" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -434,33 +407,44 @@
       <workItem from="1509455911931" duration="316000" />
       <workItem from="1509456442180" duration="181000" />
       <workItem from="1509456899675" duration="5000" />
-      <workItem from="1509456913322" duration="389000" />
+      <workItem from="1509456913322" duration="989000" />
+      <workItem from="1509509184526" duration="2945000" />
+      <workItem from="1509522677399" duration="16000" />
+      <workItem from="1509534370086" duration="1302000" />
+      <workItem from="1509680523889" duration="599000" />
+      <workItem from="1509711982059" duration="636000" />
+      <workItem from="1509776324519" duration="6000" />
+      <workItem from="1509780995886" duration="2000" />
+      <workItem from="1511173489174" duration="226000" />
+      <workItem from="1511173846326" duration="8704000" />
+      <workItem from="1511413091770" duration="2789000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="121397000" />
+    <option name="totallyTimeSpent" value="139222000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="37" y="90" width="1728" height="944" extended-state="0" />
+    <frame x="37" y="62" width="1922" height="1092" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20775463" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18697916" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3299389" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32818073" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection Results" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32925585" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32818073" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -477,134 +461,10 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/application/index/view/index/websitecase&#10;.html" />
-    <entry file="file://$PROJECT_DIR$/application/index/view/index/agencyconsultation&#10;.html" />
-    <entry file="file://$PROJECT_DIR$/application/index/view/index/contactus.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/admin/view/index/member_add.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="57" column="8" lean-forward="false" selection-start-line="57" selection-start-column="8" selection-end-line="78" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/static/admin/js/bootstrap.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/admin/controller/ConfigController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-149">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/admin/controller/IndexController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="552">
-          <caret line="323" column="0" lean-forward="false" selection-start-line="323" selection-start-column="0" selection-end-line="323" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/admin/controller/LoginController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1200">
-          <caret line="59" column="20" lean-forward="false" selection-start-line="59" selection-start-column="20" selection-end-line="59" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/index/view/index/station.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6288">
-          <caret line="266" column="0" lean-forward="false" selection-start-line="266" selection-start-column="0" selection-end-line="266" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/static/admin/js/biaodan.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="17" column="24" lean-forward="false" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="24" />
-          <folding>
-            <marker date="1508727146426" expanded="true" signature="499:510" ph="..." />
-            <marker date="1508727146426" expanded="true" signature="1223:1234" ph="..." />
-            <marker date="1508727146426" expanded="true" signature="1704:1715" ph="..." />
-            <marker date="1508727146426" expanded="true" signature="2431:2442" ph="..." />
-            <marker date="1508727146426" expanded="true" signature="2931:2942" ph="..." />
-            <marker date="1508727146426" expanded="true" signature="3706:3717" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/index/view/login/register.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="10" column="52" lean-forward="false" selection-start-line="10" selection-start-column="52" selection-end-line="10" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/admin/view/index/member_show.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/admin/view/index/member_list_dls_sh.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3168">
-          <caret line="132" column="28" lean-forward="false" selection-start-line="132" selection-start-column="28" selection-end-line="132" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/index/view/index/wechatdistribution.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="528">
-          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/index/view/index/head.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="32" column="48" lean-forward="true" selection-start-line="32" selection-start-column="48" selection-end-line="32" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/index/view/index/footer.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2179">
-          <caret line="184" column="0" lean-forward="false" selection-start-line="184" selection-start-column="0" selection-end-line="184" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/mobile/view/admin/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/common.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/config.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="744">
           <caret line="147" column="6" lean-forward="false" selection-start-line="147" selection-start-column="6" selection-end-line="147" selection-end-column="6" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -616,31 +476,10 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/mobile/view/index/wordofmouth&#10;.html" />
-    <entry file="file://$PROJECT_DIR$/application/index/controller/AdminController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/index/view/index/proxypattern.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/index/view/index/agencyconsultation.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/index/controller/IndexController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="29" column="0" lean-forward="true" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -692,7 +531,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="672">
           <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -700,7 +538,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="576">
           <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -708,7 +545,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="600">
           <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -716,7 +552,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="600">
           <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -724,7 +559,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="576">
           <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -732,7 +566,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="648">
           <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -740,7 +573,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1896">
           <caret line="79" column="0" lean-forward="true" selection-start-line="79" selection-start-column="0" selection-end-line="79" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -748,7 +580,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="600">
           <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -756,7 +587,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="576">
           <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -764,47 +594,34 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="648">
           <caret line="27" column="68" lean-forward="true" selection-start-line="27" selection-start-column="68" selection-end-line="27" selection-end-column="68" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/mobile/view/index/head.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1920">
-          <caret line="80" column="6" lean-forward="false" selection-start-line="80" selection-start-column="6" selection-end-line="80" selection-end-column="6" />
-          <folding />
+        <state relative-caret-position="768">
+          <caret line="32" column="0" lean-forward="false" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/mobile/view/index/footer.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="671">
-          <caret line="184" column="0" lean-forward="true" selection-start-line="184" selection-start-column="0" selection-end-line="184" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/mobile/view/index/dataopenapi.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="4416">
+          <caret line="184" column="0" lean-forward="false" selection-start-line="184" selection-start-column="0" selection-end-line="184" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/mobile/view/index/agencypolicy.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
+        <state relative-caret-position="624">
           <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/mobile/view/index/.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="395">
-          <caret line="19" column="16" lean-forward="true" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="16" />
-          <folding />
+        <state relative-caret-position="456">
+          <caret line="19" column="16" lean-forward="false" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="16" />
         </state>
       </provider>
     </entry>
@@ -812,22 +629,199 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="288">
           <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="61" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/mobile/view/index/itservice.html">
+    <entry file="file://$PROJECT_DIR$/application/mobile/view/index/dataopenapi.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="600">
+          <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.user.ini">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/mobile/view/index/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="460">
-          <caret line="22" column="27" lean-forward="true" selection-start-line="22" selection-start-column="27" selection-end-line="22" selection-end-column="27" />
+        <state relative-caret-position="1608">
+          <caret line="67" column="22" lean-forward="false" selection-start-line="67" selection-start-column="22" selection-end-line="67" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/mobile/view/index/itservice.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/common/model/Goodtype.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/common/model/Member.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="552">
+          <caret line="69" column="29" lean-forward="true" selection-start-line="69" selection-start-column="29" selection-end-line="69" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/common/model/Admin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-389">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/admin/view/index/article_add.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1325">
+          <caret line="131" column="139" lean-forward="false" selection-start-line="131" selection-start-column="139" selection-end-line="131" selection-end-column="139" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/admin/view/index/member_list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/common/model/Article_type.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="13" column="32" lean-forward="false" selection-start-line="13" selection-start-column="32" selection-end-line="13" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/index/view/index/news.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="472">
+          <caret line="75" column="22" lean-forward="false" selection-start-line="75" selection-start-column="22" selection-end-line="75" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/admin/view/index/member_add_dls.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-792">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/admin/view/index/article_list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="51" column="46" lean-forward="false" selection-start-line="51" selection-start-column="35" selection-end-line="51" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/admin/view/index/member_list_dls_sh.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="912">
+          <caret line="38" column="40" lean-forward="false" selection-start-line="38" selection-start-column="40" selection-end-line="38" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/admin/view/index/liuyan.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="24">
+          <caret line="43" column="35" lean-forward="false" selection-start-line="43" selection-start-column="35" selection-end-line="43" selection-end-column="35" />
+          <folding>
+            <element signature="e#1273#1277#1" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#1;n#td#6;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#2;n#td#6;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <marker date="1511182822923" expanded="true" signature="6017:6037" ph="..." />
+            <marker date="1511182822923" expanded="true" signature="6127:6135" ph="..." />
+            <marker date="1511182822923" expanded="true" signature="6546:6566" ph="..." />
+            <marker date="1511182822923" expanded="true" signature="6655:6663" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/index/view/index/newscontent.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="456">
+          <caret line="69" column="93" lean-forward="false" selection-start-line="69" selection-start-column="93" selection-end-line="69" selection-end-column="93" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/common/model/Liuyan.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="20" column="5" lean-forward="false" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/index/controller/AdminController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="53" column="0" lean-forward="true" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/common/model/Article.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="163">
+          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="21" selection-end-column="5" />
+          <folding>
+            <element signature="e#112#125#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/admin/controller/IndexController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="235">
+          <caret line="218" column="0" lean-forward="false" selection-start-line="218" selection-start-column="0" selection-end-line="226" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/index/view/index/agencyconsultation.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="509">
+          <caret line="107" column="26" lean-forward="true" selection-start-line="107" selection-start-column="26" selection-end-line="107" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/admin/view/index/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="24">
+          <caret line="111" column="16" lean-forward="false" selection-start-line="111" selection-start-column="16" selection-end-line="111" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/index/view/index/footer.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="715">
+          <caret line="145" column="38" lean-forward="false" selection-start-line="145" selection-start-column="38" selection-end-line="145" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/index/controller/IndexController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="523">
+          <caret line="104" column="33" lean-forward="false" selection-start-line="104" selection-start-column="33" selection-end-line="104" selection-end-column="33" />
           <folding />
         </state>
       </provider>

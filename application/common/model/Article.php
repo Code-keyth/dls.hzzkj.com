@@ -7,6 +7,7 @@
  */
 
 namespace app\common\model;
+use think\Db;
 use think\Model;
 
 class Article extends Model
@@ -32,5 +33,10 @@ class Article extends Model
         $article->file = "";
         $article->editorvalue = "";
         return $article;
+    }
+    public function GetType(){
+        $aa=Article_type::get($this->getdata('type'));
+        return $aa->getdata('name');
+
     }
 }

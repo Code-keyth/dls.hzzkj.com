@@ -4,6 +4,7 @@ use app\common\model\Admin;
 use app\common\model\Article;
 use app\common\model\Config;
 use app\common\model\Goodtype;
+use app\common\model\Liuyan;
 use app\common\model\Member;
 use app\common\model\Project;
 use think\Controller;
@@ -122,6 +123,16 @@ class IndexController extends Controller
         }else{
             $Article = NEW Article();
         }
+        $file = Request::instance()->file('image');
+        if($file){
+            $info = $file->move(ROOT_PATH . 'public' . DS . 'uploads');
+            if($info){
+                $path='/public/uploads/'.$info->getSaveName();
+                $Article->file =$path;
+            }else{
+                return alert('图片上传失败:'.$file->getError(), 'article_list', 5, 0);;
+            }
+        }
         $Article->title = $postdata['articletitle'];
         $Article->title2 = $postdata['articletitle2'];
         #$Article->column=$postdata['articlecolumn'];
@@ -131,7 +142,6 @@ class IndexController extends Controller
         $Article->abstract = $postdata['abstract'];
         $Article->author = $postdata['author'];
         $Article->sources = $postdata['sources'];
-        $Article->file = $postdata['file'];
         $Article->editorvalue = $postdata['editorValue'];
         $Article->updata_time = time();
         $Article->create_time = time();
@@ -576,6 +586,16 @@ class IndexController extends Controller
         }else{
             return false;
         }
+    }
+
+    /**
+     * 留言模块
+    **/
+    public function liuyan()
+    {
+        $articles=Liuyan::all();
+        $this->assign('articles',$articles);
+        return $this->fetch();
     }
 
 

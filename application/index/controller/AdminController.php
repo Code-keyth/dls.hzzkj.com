@@ -49,6 +49,9 @@ class AdminController extends Controller
     public function welcome(){
         return $this->fetch();
     }
+
+
+
     /**
      * 资讯
     **/

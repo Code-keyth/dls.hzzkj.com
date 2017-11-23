@@ -1,19 +1,21 @@
 
+
+
 <div class="col-xs-12 col-sm-12 col-md-12  slide4">
 
-    <div class="col-md-10 col-md-offset-1">
-        <div class="col-md-3  col-sm-12 col-xs-12" style="padding-left: 0;">
-            <h3 class="slide4-zb">准备开展业务？</h3>
+    <div class="col-md-10 col-md-offset-1 col-xs-12 clear-padding ">
+        <div class="col-xs-12 col-md-3  " style="padding-left: 0;">
+            <h3 class="slide4-zb" style="white-space: nowrap;">准备开展业务？</h3>
         </div>
-        <div class="col-md-6">
+        <div class="col-xs-12 col-md-6 clear-padding ">
 
 
-            <div class="col-md-5 col-md-offset-1  col-sm-6 col-xs-6">
+            <div class="col-xs-6  ">
                 <h4 class="slide4-but slide4-but1">
                     <a href="#">立即创建网站</a>
                 </h4>
             </div>
-            <div class="col-md-5   col-sm-6 col-xs-6">
+            <div class="col-xs-6   ">
                 <h4 class="slide4-but slide4-but2">
                     <a href="#">成为渠道商</a>
                 </h4>
@@ -21,9 +23,11 @@
 
         </div>
 
-        <div class="col-md-3   col-sm-6 col-xs-6  slide4-tel" style="text-align: right;margin-top: 30px;">或者拨打:
+        <div class="col-xs-12 col-md-3     slide4-tel" style="text-align: right;margin-top: 10px; white-space: nowrap;">
+            或者拨打: <br class="hidden-xs hidden-sm">
             0371-60297655
-            <img src="_INDEX/images/7-24.png" width="100%" alt="">
+            <br>
+            <img src="_INDEX/images/7-24.png" width="250" alt="">
         </div>
     </div>
 
@@ -32,11 +36,13 @@
 </div>
 <!--slide4结束-->
 
-<div class="col-md-12 col-sm-12 col-xs-12 slide5">
-    <div class="col-md-offset-1 col-md-10 col-xs-12 col-sm-12 slide5-top">
 
 
-        <div class="col-md-3 col-sm-6 slide5-767">
+<div class="col-md-12 col-sm-12 col-xs-12 slide5 hidden-xs hidden-sm">
+    <div class="col-xs-offset-1 col-xs-10  slide5-top">
+
+
+        <div class="col-xs-3  slide5-767">
             <p class="slide5-tit">联系我们</p>
             <p>河南·郑州 金水区创业园北林路16号</p>
             <p>联系电话：0371-60297655</p>
@@ -54,11 +60,11 @@
                    target="_blank"></a>
 
             </div>
-            <script type="text/javascript" src="http://v3.jiathis.com/code/jia.js" charset="utf-8"></script>
+
             <!-- JiaThis Button END -->
             </p>
         </div>
-        <div class="col-md-3 col-sm-6 max-display">
+        <div class="col-xs-3  ">
             <p class="slide5-tit">"互联网+" 新闻中心</p>
             <p class="slide5-tit-2">加快HTML5开发可视化编辑器 </p>
             <p>随着HTML5游戏《围住神经猫》爆红网络， 越来越多的游戏开发者把目光投向HTML5领域。但是HTML5游戏...</p>
@@ -66,10 +72,8 @@
             <p>本文翻译自Steve Fulton Jeff Fulton HTML5Canvas, Chapter 2, The Basic RectangleShape. 让我们来看一下...</p>
 
         </div>
-        <div class="col-sm-12 display-991">
 
-        </div>
-        <div class="col-md-3 col-sm-6 max-display">
+        <div class="col-xs-3  ">
             <p class="slide5-tit">产品与服务</p>
 
             <div class="col-md-6 col-sm-6 cpfw-tit">
@@ -103,7 +107,7 @@
 
             </div>
 
-            <div class="col-md-6 col-sm-6 cpfw-tit" style="text-align: right;padding-right: 15px;">
+            <div class="col-xs-5  cpfw-tit" style="text-align: right;">
                 <p class="cpfw cpfw-a">
                     <a href="#">代理政策</a>
                 </p>
@@ -123,23 +127,23 @@
 
             </div>
         </div>
-        <div class="col-md-3 col-sm-6 max-display">
+        <div class="col-xs-3  ">
             <p class="slide5-tit">发送留言</p>
-            <form>
+            <form action="{:url('liuyan')}" method="post">
                 <div class="form-group">
 
-                    <input type="name" class="form-control" id="exampleInputEmail1" placeholder="姓名">
+                    <input type="name" name="name" class="form-control" id="exampleInputEmail1" placeholder="姓名">
                 </div>
                 <div class="form-group">
 
-                    <input type="tel" class="form-control" id="exampleInputEmail1" placeholder="联系方式">
+                    <input type="tel" name="mobile" class="form-control" id="exampleInputEmail1" placeholder="联系方式">
                 </div>
                 <div class="form-group">
 
-                    <textarea class="form-control" rows="3" placeholder="留言内容"></textarea>
+                    <textarea class="form-control" name="content" rows="3" placeholder="留言内容"></textarea>
                 </div>
 
-                <button type="submit" class="btn btn-default btn-footer">提 交</button>
+                <button type="submit"  class="btn btn-default btn-footer">提 交</button>
             </form>
 
         </div>
@@ -151,10 +155,10 @@
 </div>
 
 
-<div class="col-md-12  col-xs-12 col-sm-12 footer-foot-top max-display-991">
+<div class="col-md-12  col-xs-12 col-sm-12 footer-foot-top hidden-xs hidden-sm ">
 
 
-    <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-1 col-xs-12 footer-foot-body foot-body-1 max-display ">
+    <div class="col-xs-8 col-xs-offset-2  footer-foot-body foot-body-1  ">
         <a href="#">关于黑珍珠 |</a>
         <a href="#">联系我们 |</a>
         <a href="#">付款方式 |</a>
@@ -166,7 +170,7 @@
         <a href="#">相关下载</a>
     </div>
 
-    <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-1 col-xs-12 footer-foot-body foot-body-2 max-display ">
+    <div class="col-xs-8 col-xs-offset-2  footer-foot-body foot-body-2  ">
         <a href="#">网站反馈 |</a>
         <a href="#">企业建站 |</a>
         <a href="#">软件开发 |</a>
@@ -178,8 +182,34 @@
         <a href="#">技术支持尽在黑珍珠</a>
     </div>
 
-    <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-1 col-xs-12 footer-foot-body foot-body-1 ">
+    <div class="col-xs-8 col-xs-offset-2  footer-foot-body foot-body-1 ">
         <p>© 2017黑珍珠科技备案号: <a href="#">豫ICP备 15011304-5号</a></p>
     </div>
 </div>
 
+
+
+
+<div class="col-md-12 col-sm-12 col-xs-12 slide5 hidden-md hidden-lg">
+    <div class="col-md-offset-1 col-md-10 col-xs-12 col-sm-12 slide5-top">
+
+
+        <div class="col-xs-12 slide5-767">
+            <p class="slide5-tit">联系我们</p>
+            <p>河南·郑州 金水区创业园北林路16号</p>
+            <p>联系电话：0371-60297655</p>
+            <p>Email：n89@163.com</p>
+            <p>邮编：450000</p>
+            <img src="_MOBILE/images/erweima.png" alt="二维码">
+            <p class="max-display">
+                <!-- JiaThis Button BEGIN -->
+
+            <script type="text/javascript" src="http://v3.jiathis.com/code/jia.js" charset="utf-8"></script>
+            <!-- JiaThis Button END -->
+            </p>
+        </div>
+
+    </div>
+
+
+</div>

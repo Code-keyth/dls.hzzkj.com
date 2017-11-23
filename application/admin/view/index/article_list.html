@@ -47,7 +47,7 @@
 					<td><input type="checkbox" value="{$article->getdata('id')}" name="id"></td>
 					<td>{$key+1}</td>
 					<td class="text-l"><u style="cursor:pointer" class="text-primary"  title="查看">{$article->getdata('title')}</u></td>
-					<td>{$article->getdata('type')}</td>
+					<td>{$article->GetType()}</td>
 					<td>{$article->getdata('author')}</td>
 					<td>{$article->updata_time}</td>
 					<td>{$article->getdata('click')}</td>

@@ -4,6 +4,8 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="黑珍珠计算机科技、黑珍珠计算机、黑珍珠科技、软件开发、app开发、软件外包、企业网站、网站建设、营销推广、渠道代理">
+    <meta name="description" content="黑珍珠计算机科技有限公司是一家从事网站建设、app开发、业务系统研发、商城系统开发、域名注册、虚拟主机、企业邮箱、seo优化、网络推广营销的专业互联网科技公司。">
     <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
     <title>渠道代理-代理咨询</title>
 
@@ -25,8 +27,8 @@
 <div class="col-xs-12 col-sm-12 col-md-12  wxfx-banner dlzx-banner">
     <!--<img src="_INDEX/images/banner.png" alt="" width="100%" height="100%" >-->
     <div class="col-xs-12 col-sm-12 col-md-12 banner-word ">
-        <h2>黑珍珠代理宣传语</h2>
-        <p class="p2"></p>
+        <h2>一键成为代理服务商</h2>
+        <p class="p2">提交资料信息服务 在线申请成为代理商服务</p>
         <p class="p2"></p>
     </div>
 
@@ -49,6 +51,7 @@
             <p class="qdzx-slide2-a">
                 <a href="#"> 点击进入</a>
             </p>
+
         </div>
         <div class="col-xs-4 qdzx-slide2-body">
             <img src="_INDEX/images/dlzx-qq.png" width="61" alt="">
@@ -62,7 +65,7 @@
         <div class="col-xs-4 qdzx-slide2-body">
             <img src="_INDEX/images/dlzx-phone.png" width="61" alt="">
             <p class="qdzx-slide2-body-p">
-                移动端拨打电话
+                拨打电话
             </p>
             <p class="qdzx-slide2-a">
                 <a href="#"> 点击进入</a>
@@ -75,51 +78,51 @@
 </div>
 
 
-<div class="col-xs-12 qdzx-slide3">
+<div class="col-xs-12 qdzx-slide3 ">
 
-    <div class="col-xs-8 col-xs-offset-2 qdzx-slide3-tit ">
-      <h3>申请成为代理商</h3>
+    <div class="col-md-8 col-md-offset-2 col-xs-12 qdzx-slide3-tit hidden-padding-768 ">
+        <h3>申请成为代理商</h3>
         <p>加入合作伙伴计划并开始享受黑珍珠为你带来的各种帮助</p>
 
         <div class="">
 
             <div class="">
 
-                <form class="">
+                <form action="{:url('shenhe_dls')}" method="post" class="">
 
-                    <div class="form-group col-xs-6" >
+                    <div class="form-group col-xs-6">
 
-                        <input type="text" class="form-control" placeholder="姓名">
+                        <input type="text" name="username" class="form-control" placeholder="姓名">
                     </div>
                     <div class="form-group col-xs-6">
 
-                        <input type="text" class="form-control" placeholder="手机">
-                    </div>
-                    <div class="form-group col-xs-6" >
-
-                        <input type="email" class="form-control"  placeholder="Email">
+                        <input type="text" name="mobile" class="form-control" placeholder="手机">
                     </div>
                     <div class="form-group col-xs-6">
 
-                        <input type="text" class="form-control"  placeholder="QQ">
+                        <input type="email" name="email" class="form-control" placeholder="Email">
+                    </div>
+                    <div class="form-group col-xs-6">
+
+                        <input type="text" class="form-control" placeholder="QQ">
                     </div>
 
-                    <div id="distpicker5" >
+                    <div id="distpicker5">
                         <div class="form-group col-xs-4">
                             <label class="sr-only" for="province10">Province</label>
-                            <select class="form-control" id="province10"></select>
+                            <select name="province" class="form-control" id="province10"></select>
                         </div>
-                        <div class="form-group col-xs-4" >
+                        <div class="form-group col-xs-4">
                             <label class="sr-only" for="city10">City</label>
-                            <select class="form-control" id="city10"></select>
+                            <select name="city" class="form-control" id="city10"></select>
                         </div>
                         <div class="form-group col-xs-4">
                             <label class="sr-only" for="district10">District</label>
-                            <select class="form-control" id="district10"></select>
+                            <select name="district" class="form-control" id="district10"></select>
                         </div>
                     </div>
                     <div class="form-group col-xs-12">
-                        <textarea class="form-control"  placeholder="给我留言" rows="5"></textarea>
+                        <textarea name="annotate" class="form-control" placeholder="给我留言" rows="5"></textarea>
                     </div>
 
 
@@ -136,14 +139,14 @@
 </div>
 
 
-
-
 <!--底部开始-->
 {include file="index/footer" /}
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="_INDEX/js/bootstrap.min.js"></script>
+
+<script src="_INDEX/style/addnav.js"></script>
 
 <!--补充的插件-->
 <script src="http://www.jq22.com/jquery/1.11.1/jquery.min.js"></script>
