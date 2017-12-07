@@ -10,14 +10,14 @@
         <div class="col-xs-12 col-md-6 clear-padding ">
 
 
-            <div class="col-xs-6  ">
+            <div class="col-xs-6 col-sm-5  col-sm-offset-1 col-md-5 col-md-offset-1 " style="padding-left: 0; padding-right: 5px;">
                 <h4 class="slide4-but slide4-but1">
-                    <a href="#">立即创建网站</a>
+                    <a href="{:url('station')}" style="white-space: nowrap;">立即创建网站</a>
                 </h4>
             </div>
-            <div class="col-xs-6   ">
+            <div class="col-xs-6  col-sm-5  col-md-5 " style="padding-left: 5px; padding-right: 0px;">
                 <h4 class="slide4-but slide4-but2">
-                    <a href="#">成为渠道商</a>
+                    <a href="{:url('proxypattern')}"  style="white-space: nowrap;">成为渠道商</a>
                 </h4>
             </div>
 
@@ -46,7 +46,7 @@
             <p class="slide5-tit">联系我们</p>
             <p>河南·郑州 金水区创业园北林路16号</p>
             <p>联系电话：0371-60297655</p>
-            <p>Email：n89@163.com</p>
+            <p>Email：info@hzzkj.com</p>
             <p>邮编：450000</p>
             <img src="_INDEX/images/erweima.png" alt="二维码">
             <p class="max-display">
@@ -213,3 +213,30 @@
 
 
 </div>
+
+<!--添加的右侧浮动导航样式开始-->
+<div class="side-bar hidden-xs">
+    <a target="_blank" href="/index/login/" class="icon-blog"></a>
+    <a href="#" class="icon-mail">mail</a>
+
+    <a href="" class="icon-chat"><div class="chat-tips"><i></i><img style="width:138px;height:138px;" src="_INDEX/images/code.jpg" alt=""></div></a>
+    <a href="#" class="icon-qq"></a>
+</div>
+<!--添加的右侧浮动导航样式结束-->
+
+
+
+
+
+<!-- 添加的新导航样式 -->
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script>
+
+$(document).ready(function(){
+      $('li.dropdown').mouseover(function() {
+        $(this).addClass('open');    }).mouseout(function() {        $(this).removeClass('open');    });  
+})
+
+</script>

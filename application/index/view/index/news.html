@@ -21,6 +21,44 @@
     <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
     <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+
+        <style>
+        @media screen  and (max-width: 768px){
+            .news-slide1-bl {
+
+                height: 200px;
+                padding-left: 0;
+                padding-right: 0;
+
+
+            }
+        }
+        .news-slide1-body img {
+            max-height: 130px;
+            min-height: 130px;
+
+        }
+
+        .news-slide1-bl {
+            border-top: 1px solid #cccccc;
+            height: 150px;
+            overflow: hidden;
+
+        }
+
+        .news-slide1-body-left {
+            overflow: hidden;
+        }
+
+        .news-slide1-body-right h4 {
+            overflow: hidden;
+        }
+
+        .news-slide1-body-right a {
+            overflow: hidden;
+        }
+
+    </style>
 </head>
 <body>
 {include file="index/head" /}
@@ -40,82 +78,49 @@
     <div class="col-xs-12 col-md-10 col-md-offset-1 news-main " id="myTab">
 
 
-        <div class="col-md-4  col-xs-4 news-slide1-tit">
-            <a href="#home" data-toggle="tab">
+        <div class="col-sm-4  col-xs-12 news-slide1-tit">
+            <a href="?id=3">
                 公司新闻
             </a>
         </div>
-        <div class="col-md-4 col-xs-4 news-slide1-tit ">
-            <a href="#ios" data-toggle="tab">
+        <div class="col-sm-4  col-xs-6 news-slide1-tit ">
+            <a href="?id=2">
                 媒体报道
             </a>
         </div>
-        <div class="col-md-4 col-xs-4 news-slide1-tit ">
-            <a href="#seo" data-toggle="tab">
+        <div class="col-sm-4  col-xs-6 news-slide1-tit ">
+            <a href="?id=1">
                 SEO优化
             </a>
         </div>
-
         <div class="col-xs-12 tab-content hidden-padding-768 news-slide1-main" id="myTabContent">
             <div class=" tab-pane fade in active col-xs-12" id="home">
                 {volist id="item" name="news"}
-                <div class="col-xs-6 news-slide1-body news-slide1-bl " style="border-top: 1px solid #cccccc">
-                    <div class="col-xs-4 news-slide1-body-left">
-                        <img src="{$item->getdata('file')}" alt="">
+
+
+                  <div class="col-md-6 col-xs-12 news-slide1-body news-slide1-bl hidden-padding-768 "
+                     style="">
+                    <div class="col-xs-4 col-sm-4 hidden-xs news-slide1-body-left" style="">
+                        <a href="{:url('newscontent')}?id={$item->getdata('id')}">
+                            <img
+                                    src="/public/{$item->getdata('file')}" width="100%" alt=""></a>
                     </div>
-                    <div>
-                        <h4><a href="{:url('newscontent')}?id={$item->getdata('id')}">{$item->getdata('title')}</a></h4>
+                    <div class="col-xs-12 col-sm-8 news-slide1-body-right ">
+                        <h4 style="">
+                            <a href="{:url('newscontent')}?id={$item->getdata('id')}"
+                               style="">
+                                {$item->getdata('title2')}</a>...</h4>
                         <p>
                             <a href="{:url('newscontent')}?id={$item->getdata('id')}">
-                                {$item->getdata('abstract')}
-                            </a>
+                               {$item->getdata('abstract')} </a>...
                         </p>
-
                     </div>
-
                 </div>
+            
+
                 {/volist}
             </div>
-
-
-            <div class=" tab-pane fade col-xs-12 " id="ios">
-                {volist id="item" name="meitis"}
-                <div class="col-xs-6 news-slide1-body news-slide1-bl " style="border-top: 1px solid #cccccc">
-                    <div class="col-xs-4 news-slide1-body-left">
-                        <img src="{$item->getdata('file')}" alt="">
-                    </div>
-                    <div>
-                        <h4><a href="{:url('newscontent')}?id={$item->getdata('id')}">{$item->getdata('title')}</a></h4>
-                        <p>
-                            <a href="{:url('newscontent')}?id={$item->getdata('id')}">
-                                {$item->getdata('abstract')}
-                            </a>
-                        </p>
-
-                    </div>
-
-                </div>
-                {/volist}
-            </div>
-            <div class=" tab-pane fade col-xs-12 " id="seo">
-                {volist id="item" name="seos"}
-                <div class="col-xs-6 news-slide1-body news-slide1-bl " style="border-top: 1px solid #cccccc">
-                    <div class="col-xs-4 news-slide1-body-left">
-                        <img src="{$item->getdata('file')}" alt="">
-                    </div>
-                    <div>
-                        <h4><a href="{:url('newscontent')}?id={$item->getdata('id')}">{$item->getdata('title')}</a></h4>
-                        <p>
-                            <a href="{:url('newscontent')}?id={$item->getdata('id')}">
-                                {$item->getdata('abstract')}
-                            </a>
-                        </p>
-
-                    </div>
-
-                </div>
-                {/volist}
-            </div>
+            {$news->render()}
 
         </div>
 

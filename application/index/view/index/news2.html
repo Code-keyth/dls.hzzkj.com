@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="黑珍珠计算机科技、黑珍珠计算机、黑珍珠科技、软件开发、app开发、软件外包、企业网站、网站建设、营销推广、渠道代理">
+    <meta name="description" content="黑珍珠计算机科技有限公司是一家从事网站建设、app开发、业务系统研发、商城系统开发、域名注册、虚拟主机、企业邮箱、seo优化、网络推广营销的专业互联网科技公司。">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>公司新闻</title>
+
+    <!-- Bootstrap -->
+    <link href="_INDEX/css/bootstrap.min.css" rel="stylesheet">
+    <link href="http://www.jq22.com/jquery/bootstrap-3.3.4.css" rel="stylesheet">
+    <link rel="stylesheet" href="_INDEX/style/index.css">
+    <link rel="stylesheet" href="_INDEX/style/xunizhuji.css">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+{include file="index/head" /}
+<div class="col-xs-12 col-sm-12 col-md-12  wxfx-banner dlzx-banner">
+    <!--<img src="_INDEX/images/banner.png" alt="" width="100%" height="100%" >-->
+    <div class="col-xs-12 col-sm-12 col-md-12 banner-word ">
+        <h2>聚焦行业优良新闻资讯</h2>
+        <p class="p2">打造企业优化共享知识平台</p>
+        <p class="p2"></p>
+    </div>
+
+</div>
+
+
+<div class="col-xs-12 news-slide1 ">
+
+    <div class="col-xs-12 col-md-10 col-md-offset-1 news-main " id="myTab">
+
+
+        <div class="col-md-4  col-xs-4 news-slide1-tit">
+            <a href="?id=3">
+                公司新闻
+            </a>
+        </div>
+        <div class="col-md-4 col-xs-4 news-slide1-tit ">
+            <a href="?id=2">
+                媒体报道
+            </a>
+        </div>
+        <div class="col-md-4 col-xs-4 news-slide1-tit ">
+            <a href="?id=1">
+                SEO优化
+            </a>
+        </div>
+        <div class="col-xs-12 tab-content hidden-padding-768 news-slide1-main" id="myTabContent">
+            <div class=" tab-pane fade in active col-xs-12" id="home">
+                {volist id="item" name="news"}
+                <div class="col-xs-6 news-slide1-body news-slide1-bl " style="border-top: 1px solid #cccccc">
+                    <div class="col-xs-4 news-slide1-body-left">
+                        <a href="{:url('newscontent')}?id={$item->getdata('id')}"><img src="/public/{$item->getdata('file')}" alt=""></a>
+                    </div>
+                    <div class="col-xs-8 news-slide1-body-right">
+                        <h4><a href="{:url('newscontent')}?id={$item->getdata('id')}">{$item->getdata('title')}</a></h4>
+                        <p>
+                            <a href="{:url('newscontent')}?id={$item->getdata('id')}">
+                                {$item->getdata('abstract')}
+                            </a>
+                        </p>
+                    </div>
+
+                </div>
+                {/volist}
+            </div>
+            {$news->render()}
+
+        </div>
+
+
+    </div>
+
+
+</div>
+
+<!--底部开始-->
+{include file="index/footer" /}
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="_INDEX/js/bootstrap.min.js"></script>
+
+<script src="_INDEX/style/addnav.js"></script>
+
+<!--补充的插件-->
+<script src="http://www.jq22.com/jquery/1.11.1/jquery.min.js"></script>
+<script src="http://www.jq22.com/jquery/bootstrap-3.3.4.js"></script>
+<script src="_INDEX/js/distpicker.data.js"></script>
+<script src="_INDEX/js/distpicker.js"></script>
+<script src="_INDEX/js/main.js"></script>
+<!--补充的插件-->
+</body>
+</html>

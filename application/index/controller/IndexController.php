@@ -41,7 +41,23 @@ class IndexController extends Controller
         return $this->fetch();
     }
     public function EnterpriseCloud(){
-        return $this->fetch();
+        $id=Request::instance()->get('id/d');
+        $type4=Article_type::get(4);
+        $type5=Article_type::get(5);
+        if(!$id){
+            $id=4;
+        }
+        $Article=new Article();
+        $news=$Article->where('type',$id)->paginate(8);
+        if (!$news->isEmpty()){
+            $this->assign('news',$news);
+            $this->assign('type4',$type4);
+            $this->assign('type5',$type5);
+            $this->assign('typeid',$id);
+            return $this->fetch();}
+        else{
+            return alert('非法操作!','enterprisecloud',5);
+        }
     }
     public function ITservice(){
         return $this->fetch();
@@ -77,15 +93,16 @@ class IndexController extends Controller
     return $this->fetch();
     }
     public function News(){
+        $id=Request::instance()->get('id/d');
+        if(!$id){
+            $id=1;
+        }
         $Article=new Article();
-        $seos=$Article->where('type',1)->select();
-        $meitis=$Article->where('type',2)->select();
-        $news=$Article->where('type',3)->select();
-        $this->assign('seos',$seos);
-        $this->assign('meitis',$meitis);
+        $news=$Article->where('type',$id)->paginate(10,false,['query'=>['id'=>$id,],]);
         $this->assign('news',$news);
         return $this->fetch();
     }
+
 
     /**
      * 直接申请成为代理商

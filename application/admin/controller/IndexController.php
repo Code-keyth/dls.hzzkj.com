@@ -2,6 +2,7 @@
 namespace app\admin\controller;
 use app\common\model\Admin;
 use app\common\model\Article;
+use app\common\model\Article_type;
 use app\common\model\Config;
 use app\common\model\Goodtype;
 use app\common\model\Liuyan;
@@ -76,7 +77,7 @@ class IndexController extends Controller
     public function article_list()
     {
         $Article = new Article();
-        $articles = $Article->select();
+        $articles = $Article->order('updata_time','desc')->select();
         $this->assign('articles', $articles);
         return $this->fetch();
     }
@@ -97,6 +98,7 @@ class IndexController extends Controller
             $article=Article::article_add_up();
             $article->type='';
         }
+        $this->assign('types', Article_type::all());
         $this->assign('article', $article);
         return $this->fetch();
     }
@@ -134,15 +136,15 @@ class IndexController extends Controller
             }
         }
         $Article->title = $postdata['articletitle'];
-        $Article->title2 = $postdata['articletitle2'];
+        $Article->title2 = mb_substr($postdata['articletitle'], 0,39);
         #$Article->column=$postdata['articlecolumn'];
         $Article->type = $postdata['articletype'];
         $Article->sort = $postdata['articlesort'];
         $Article->keywords = $postdata['keywords'];
-        $Article->abstract = $postdata['abstract'];
+        $Article->abstract =mb_substr(strip_tags($postdata['editorValue']), 0,207);
         $Article->author = $postdata['author'];
         $Article->sources = $postdata['sources'];
-        $Article->editorvalue = $postdata['editorValue'];
+        $Article->editorvalue = preg_replace("/<(\/?style.*?)>/si","",$postdata['editorValue']);
         $Article->updata_time = time();
         $Article->create_time = time();
         $a = $Article->save();
@@ -164,7 +166,6 @@ class IndexController extends Controller
             $this->assign('off', 'off');
         }
         $Member = new Member();
-
         $members = $Member->where('level=0')->order('id desc')->select();
         $this->assign('members', $members);
         return $this->fetch();
@@ -598,7 +599,21 @@ class IndexController extends Controller
         return $this->fetch();
     }
 
+    public function yijian_article(){
+        $articles=Article::all();
+        foreach ($articles as $postdata){
+            $article=Article::get($postdata->id);
+            $article->title2 = mb_substr($postdata->title, 0,39);
+            $article->abstract =mb_substr(strip_tags($postdata->editorvalue), 0,207);
+            $article->editorvalue = preg_replace("/<([a-zA-Z]+)[^>]*>/","<\\1>",$postdata->editorvalue);
+            $article->save();
+            print($postdata->id."完成!</br>");
+        }
+    }
+
 
 
 
 }
+
+

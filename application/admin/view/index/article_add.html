@@ -57,22 +57,22 @@
 			<label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>文章类型：</label>
 			<div class="formControls col-xs-8 col-sm-9"> <span class="select-box">
 				<select name="articletype" class="select">
-					<option value="">选择类型</option>
-					<option {eq name="$article->getdata('type')" value="帮助说明"} selected="selected" {/eq} value="帮助说明">帮助说明</option>
-					<option  {eq name="$article->getdata('type')" value="新闻资讯"} selected="selected" {/eq} value="新闻资讯">新闻资讯</option>
+					{volist id="type" name="types"}
+					<option {eq name="$article->type" value="$type->id"} selected="selected" {/eq} value="{$type->id}">{$type->name}</option>
+					{/volist}
 				</select>
 				</span> </div>
 		</div>
 		<div class="row cl">
 			<label class="form-label col-xs-4 col-sm-2">排序值：</label>
 			<div class="formControls col-xs-8 col-sm-9">
-				<input type="text" class="input-text" value="{$article->getdata('sort')}" placeholder="" id="articlesort" name="articlesort">
+				<input type="text" class="input-text" value="50" value="{$article->getdata('sort')}" placeholder="" id="articlesort" name="articlesort">
 			</div>
 		</div>
 		<div class="row cl">
 			<label class="form-label col-xs-4 col-sm-2">关键词：</label>
 			<div class="formControls col-xs-8 col-sm-9">
-				<input type="text" class="input-text" value="{$article->getdata('keywords')}" placeholder="" id="keywords" name="keywords">
+				<input type="text" class="input-text"  value="{$article->getdata('keywords')}" placeholder="" id="keywords" name="keywords">
 			</div>
 		</div>
 		<div class="row cl">
@@ -129,7 +129,7 @@
 			<label class="form-label col-xs-4 col-sm-2">缩略图：</label>
 			<div class="formControls col-xs-8 col-sm-9">
 				<div class="uploader-thum-container">
-					<input type="file" name="image" />			<img src="{$article->getdata('file')}" style="width:100px ;height: 100px"/>
+					<input type="file" name="image" />			<img src="/public/{$article->getdata('file')}" style="width:100px ;height: 100px"/>
 
 				</div>
 			</div>
